@@ -103,7 +103,7 @@
 					caption: function($a) { 
 						// Überschrift und Text zusammenfassen
 						var title = $a.next('h3').text();
-						var description = $a.nextAll('p').first().text();
+						var description = $a.next('p').text();
 						return title + description + '<br>' + description;
 					},
 					overlayColor: '#2c2c2c',
