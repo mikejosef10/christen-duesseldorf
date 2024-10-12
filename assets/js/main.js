@@ -99,7 +99,13 @@
 			$window.on('load', function() {
 
 				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
+					// caption: function($a) { return $a.next('h3').text(); },
+					caption: function($a) { 
+						// Überschrift und Text zusammenfassen
+						var title = $a.next('h3').text();
+						var description = $a.nextAll('p').first().text();
+						return title + '<br>' + description;
+					},
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
