@@ -3,32 +3,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-function openModal() {
-    // Den Container auswählen, in dem nach dem Modal gesucht werden soll
-    var container = document.getElementById("container"); // Ersetze "container" durch die ID deines Containers
-    
-    // Das Modal innerhalb des Containers suchen
-    var modal = container.querySelector("#modal"); // Sucht nach dem Modal innerhalb des Containers
-
-    if (modal) {
-        modal.style.display = "block"; // Modal anzeigen, wenn es gefunden wurde
-    }
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
 }
 
-
-function closeModal() {
-	function openModal() {
-		// Den Container auswählen, in dem nach dem Modal gesucht werden soll
-		var container = document.getElementById("container"); // Ersetze "container" durch die ID deines Containers
-		
-		// Das Modal innerhalb des Containers suchen
-		var modal = container.querySelector("#modal"); // Sucht nach dem Modal innerhalb des Containers
-	
-		if (modal) {
-			modal.style.display = "none"; 
-		}
-	}
-	
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
 }
 
 (function($) {
