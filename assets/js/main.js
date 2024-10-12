@@ -104,7 +104,7 @@
 						// Überschrift und Text zusammenfassen
 						var title = $a.next('h3').text();
 						var description = $a.nextAll('p').first().text();
-						return title + 'Text: ' + '<br>' + description;
+						return title + description + '<br>' + description;
 					},
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
