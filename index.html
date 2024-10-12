@@ -52,11 +52,24 @@
 								<h3>Ultricies lacinia interdum</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="./images/fulls/03.jpg" class="image fit thumb"><img src="./images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat. Was passiert wenn ich gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz viel schreibe?</p>
-							</article>
+							<div class="container">
+								<article class="col-6 col-12-xsmall work-item">
+									<a href="#" class="image fit thumb" onclick="openModal()">
+										<img src="./images/thumbs/03.jpg" alt="Thumbnail" />
+									</a>
+									<h3>Tortor metus commodo</h3>
+									<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat. Was passiert wenn ich gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz viel schreibe?</p>
+								</article>
+								<!-- Modal für die vollständige Artikelanzeige -->
+								<div id="modal" class="modal">
+									<div class="modal-content">
+										<span class="close" onclick="closeModal()">&times;</span>
+										<h3>Tortor metus commodo</h3>
+										<p>Hier ist der vollständige Artikeltext. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<img src="./images/fulls/03.jpg" alt="Full Article Image" />
+									</div>
+								</div>
+							</div>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="./images/fulls/04.jpg" class="image fit thumb"><img src="./images/thumbs/04.jpg" alt="" /></a>
 								<h3>Quam neque phasellus</h3>

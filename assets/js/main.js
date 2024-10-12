@@ -3,6 +3,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
 
 (function($) {
 
@@ -99,13 +106,7 @@
 			$window.on('load', function() {
 
 				$('#two').poptrox({
-					// caption: function($a) { return $a.next('h3').text(); },
-					caption: function($a) { 
-						// Überschrift und Text zusammenfassen
-						var title = $a.next('h3').text();
-						var description = $a.next('p').text();
-						return title + description + '<br>' + description;
-					},
+					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
@@ -119,5 +120,7 @@
 				});
 
 			});
+
+			
 
 })(jQuery);
