@@ -103,6 +103,7 @@ function closeModal() {
 	// Main Sections: Two.
 
 		// Lightbox gallery.
+		/*
 			$window.on('load', function() {
 
 				$('#two').poptrox({
@@ -120,7 +121,7 @@ function closeModal() {
 				});
 
 			});
-
+		*/
 			
 
 })(jQuery);
